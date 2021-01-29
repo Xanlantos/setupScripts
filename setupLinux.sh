@@ -10,8 +10,8 @@ install() {
 installP10k(){
     git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k || echo "already loaded p10k"
     # copy configs
-    cp "setupScripts/.p10k.zsh" "~/.p10k.zsh"
-    cp "setupScripts/.zshrc" "~/.zshrc"
+    cp setupScripts/.p10k.zsh ~/.p10k.zsh
+    cp setupScripts/.zshrc ~/.zshrc
 }
 basicSetup() {
   sudo apt update && sudo apt -y upgrade && sudo apt -y autoremove
